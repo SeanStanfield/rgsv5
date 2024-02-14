@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { Typography } from "@mui/material";
+import CtaBox from '@/components/CtaBox';
 
 
 const alfa = Alfa_Slab_One({ subsets: ["latin"], weight: ['400'] });
@@ -26,6 +27,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
           
             {children}
+            <CtaBox/>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
