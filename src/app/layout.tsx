@@ -24,9 +24,7 @@ export default function RootLayout({
       <body className={"a"}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Typography variant="h1">Example h1</Typography>
-            <Typography variant="h2">Example h2</Typography>
-            <Typography variant="body1">Example body1</Typography>
+          
             {children}
           </ThemeProvider>
         </AppRouterCacheProvider>
