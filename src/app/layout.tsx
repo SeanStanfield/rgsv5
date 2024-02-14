@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Alfa_Slab_One } from "next/font/google";
 import "./globals.css";
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../theme';
+import { Typography } from "@mui/material";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const alfa = Alfa_Slab_One({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={"a"}>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <Typography variant="h1">Example h1</Typography>
+            <Typography variant="h2">Example h2</Typography>
+            <Typography variant="body1">Example body1</Typography>
+            {children}
+          </ThemeProvider>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   );
 }
