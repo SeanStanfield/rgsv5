@@ -5,7 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { Typography } from "@mui/material";
-import CtaBox from '@/components/CtaBox';
+import Footer from "@/components/footer";
 
 const alfa = Alfa_Slab_One({ subsets: ["latin"], weight: ['400'] });
 
@@ -26,6 +26,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
           
             {children}
+            <Footer/>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

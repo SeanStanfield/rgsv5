@@ -4,6 +4,7 @@ import BasicUsage from "@/components/BasicUsage"
 import styles from './styles.module.css'
 import { Typography } from "@mui/material";
 import CtaBox from "@/components/CtaBox";
+import Footer from "@/components/footer";
 
 export default function About() {
   return (
