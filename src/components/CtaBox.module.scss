@@ -1,0 +1,33 @@
+
+.bg{
+background-image: url("https://res.cloudinary.com/ddnkaqqhe/image/upload/v1683560692/cta-shaded-webp_swzqmj.webp");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 650px;
+width: 100vw;
+display: flex;
+flex-direction: row;
+height: 100%;
+align-items: center;
+
+.ctaTitle{
+	color: white;
+	padding-bottom: 32px;
+}
+
+.ctaBody{
+	color: white;
+	max-width: 650px;
+}
+
+.ctaButton{
+	flex-grow: 0;
+	flex-basis: max-content;
+}
+
+.ctaButtons{
+	padding-top: 32px;
+}
+
+}
