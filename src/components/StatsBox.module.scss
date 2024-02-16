@@ -1,0 +1,31 @@
+.statsBox {
+    background: #294b7f;
+    margin: 32px 0; /* Assuming the theme's spacing unit is 8px */
+  }
+  
+  .statsItem {
+    border-left: solid 2px #243B5D;
+    border-right: solid 2px #243B5D;
+    display: grid;
+    place-items: center;
+    min-height: 240px;
+    padding: 8px 0; /* Assuming the theme's spacing unit is 8px */
+    color: white; /* Assuming you want to set color for both .upper-text and .lower-text */
+  }
+  
+  .bigNumber {
+    color: yellow;
+}
+  
+  .upperText,
+  .lowerText {
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 960px) {
+    .statsItem {
+      border: none;
+      border-bottom: solid 3px #243B5D;
+    }
+  }
+  

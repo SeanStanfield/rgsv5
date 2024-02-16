@@ -4,8 +4,8 @@ import BasicUsage from "@/components/BasicUsage"
 import styles from './styles.module.css'
 import { Typography } from "@mui/material";
 import CtaBox from "@/components/CtaBox";
-import Footer from "@/components/footer";
 import Slider from "@/components/Slider";
+import StatsBox from "@/components/StatsBox";
 
 export default function About() {
   return (
@@ -17,6 +17,7 @@ export default function About() {
     <Slider>
       <Typography>outer child</Typography>
     </Slider>
+    <StatsBox/>
     <CtaBox/>
    </main>
   );
