@@ -12,11 +12,15 @@
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
     "@mui/material-nextjs": "^5.15.9",
+    "embla-carousel": "^8.0.0-rc22",
+    "embla-carousel-react": "^8.0.0-rc22",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-responsive-carousel": "^3.2.23",
     "sass": "^1.70.0"
   },
   "devDependencies": {

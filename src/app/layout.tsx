@@ -6,6 +6,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { Typography } from "@mui/material";
 import Footer from "@/components/footer";
+import Navbar from "@/components/Navbar";
 
 const alfa = Alfa_Slab_One({ subsets: ["latin"], weight: ['400'] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body className={"a"}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-          
+            <Navbar/>
             {children}
             <Footer/>
           </ThemeProvider>

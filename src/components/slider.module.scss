@@ -1,0 +1,30 @@
+.sliderWrapper {
+    background: linear-gradient(to top right, #27374E, #2F4F7F);
+  }
+  
+  .sliderGrid {
+    padding: 80px 0; /* Adjust according to your theme.spacing(10, 0) */
+  }
+  
+  .sliderText, .sliderImage img {
+    color: white;
+  }
+  
+  .titleIcon {
+    padding-right: 0.75rem;
+    max-width: 45px;
+    object-fit: contain;
+    transform: translateY(-10px);
+  }
+  
+  .title::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    background-color: #e7ce4f;
+    border-radius: 10px;
+    top: -8px;
+    left: 0;
+  }
+  
