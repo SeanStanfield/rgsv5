@@ -6,6 +6,8 @@ import { Typography } from "@mui/material";
 import CtaBox from "@/components/CtaBox";
 import Slider from "@/components/Slider";
 import StatsBox from "@/components/StatsBox";
+import SocialProof from "@/components/SocialProof";
+import Faqs from "@/components/Faqs";
 
 export default function About() {
   return (
@@ -17,6 +19,8 @@ export default function About() {
     <Slider>
       <Typography>outer child</Typography>
     </Slider>
+    <SocialProof/>
+    <Faqs/>
     <StatsBox/>
     <CtaBox/>
    </main>

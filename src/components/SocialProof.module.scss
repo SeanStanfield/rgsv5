@@ -1,0 +1,26 @@
+/* SocialProof.module.scss */
+.socialProofImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px; // Adjust based on your theme spacing
+    img {
+      max-width: 45%;
+      flex: 1;
+    }
+  }
+  
+  .wrapper {
+    padding: 32px 0 64px; // Adjust based on your theme spacing
+  }
+  
+  .body {
+    padding: 32px 0; // Adjust based on your theme spacing
+  }
+  
+  .img {
+    max-width: 100%;
+  }
+  

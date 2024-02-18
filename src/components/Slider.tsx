@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carous
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import styles from './slider.module.scss'; // Assuming you have a Slider.module.css
 
-const Slider = () => {
+const Slider = ({children}) => {
   return (
     <Box className={styles.sliderWrapper}>
       <Carousel autoPlay infiniteLoop interval={8000} showStatus={false}

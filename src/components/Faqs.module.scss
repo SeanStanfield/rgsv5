@@ -1,0 +1,26 @@
+/* Faqs.module.scss */
+.wrapper {
+    min-height: 250px;
+    background-image: linear-gradient(to top right, #27374E, #2F4F7F);
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .faqImageSrc {
+    max-height: 700px;
+  }
+  
+  .textContent {
+    display: grid;
+    place-items: center;
+  }
+  
+  .text {
+    max-width: 700px;
+    min-width: 400px;
+    position: relative;
+  }
+  
+  /* Additional styles here */
+  
