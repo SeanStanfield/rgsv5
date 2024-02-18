@@ -22,7 +22,9 @@ export default function About() {
     <SocialProof images={[]}/>
     <Faqs faqs={[]} title={'Frequently asked questions'}/>
     <StatsBox/>
+    <h1>Test</h1>
     <CtaBox/>
    </main>
+   
   );
 }
