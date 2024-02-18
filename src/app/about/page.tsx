@@ -19,8 +19,8 @@ export default function About() {
     <Slider>
       <Typography>outer child</Typography>
     </Slider>
-    <SocialProof/>
-    <Faqs/>
+    <SocialProof images={[]}/>
+    <Faqs faqs={[]} title={'Frequently asked questions'}/>
     <StatsBox/>
     <CtaBox/>
    </main>
