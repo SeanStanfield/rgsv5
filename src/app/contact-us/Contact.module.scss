@@ -1,0 +1,125 @@
+.hero {
+    background-image: linear-gradient(to top right, #27374e, #2f4f7f);
+    min-height: 500px;
+    color: #fcfcfc;
+    z-index: 100;
+    position: relative;
+
+    &Text {
+        display: grid;
+        place-items: center;
+
+        &Stack {
+            max-width: 600px;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        &Call {
+            font-size: 21px;
+            font-weight: bold;
+            color: #fcfcfc !important;
+            margin-top: 12px;
+            text-decoration: underline;
+        }
+    }
+
+    .card {
+        padding: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        opacity: 0;
+        transform: translateY(6rem);
+        z-index: 100;
+        max-width: 600px;
+        animation: fadeIn forwards 1s;
+        animation-delay: 0.2s;
+
+        &Title {
+            text-transform: capitalize;
+            font-size: 28px;
+        }
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+
+            div[class*="inputField"] {
+                margin: 0.5rem 0;
+            }
+
+            .inputField {
+                &Full {
+                    width: 100%;
+                }
+
+                &Half {
+                    width: 48%;
+                    @media all and (max-width: 1200px) {
+                        width: 100%;
+                    }
+                }
+
+                &Half.email {
+                    margin-right: 4%;
+
+                    @media all and (max-width: 1200px) {
+                        margin-right: 0;
+                    }
+                }
+
+                .submit {
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+
+    to {
+        transform: translateY(4rem);
+        opacity: 1;
+    }
+}
+
+.container {
+    &Text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &Stack {
+            max-width: 500px;
+            padding: 2rem;
+
+            &Subtitle {
+                margin-bottom: -12px;
+                margin-top: 16px;
+            }
+
+            &Button {
+                width: 100%;
+                background-color: #294b7f;
+                color: #fcfcfc;
+                margin-top: 32px;
+            }
+        }
+    }
+
+    &Image {
+        position: relative;
+        display: flex;
+
+        &Src {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
