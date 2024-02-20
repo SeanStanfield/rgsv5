@@ -1,0 +1,65 @@
+.controlArrow {
+  max-height: 40px;
+  width: 40px !important;
+  top: 50% !important;
+  background-color: rgba(237, 237, 237, 0.49) !important;
+  border-radius: 50px;
+  margin: 0 32px; /* Adjusted from theme.spacing(0, 4) */
+}
+
+.controlArrow::before {
+  color: black !important;
+}
+
+.heroBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroWrapper {
+  min-height: 70vh;
+}
+
+@media (max-width: 960px) { /* Corresponds to theme.breakpoints.down('md') */
+  .heroWrapper {
+      padding-top: 0;
+  }
+}
+
+.pageTitle {
+  text-transform: uppercase;
+}
+
+.whatWeDo {
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+  padding: 0 32px; /* Adjusted from theme.spacing(0, 4) */
+}
+
+.whatWeDoTitle {
+  margin-top: -40px;
+}
+
+@media (max-width: 1280px) { /* Corresponds to theme.breakpoints.down('lg') */
+  .whatWeDoTitle {
+      margin-top: -10px;
+  }
+}
+
+.whiteTriangle{
+	width: 100vw;
+	translate: 0px 32px;
+}
+
+@media (max-width: 960px) { /* Corresponds to theme.breakpoints.down('md') */
+  .whatWeDoTitle {
+      margin-top: 20px;
+  }
+}
+
+.whatWeDoDescription {
+  padding-top: 32px; /* Adjusted from theme.spacing(4) */
+}

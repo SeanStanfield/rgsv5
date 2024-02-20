@@ -5,7 +5,7 @@ import styles from '@/app/contact-us/Contact.module.scss'; // Adjust the import 
 const ContactForm = () => {
   return (
     <form action="https://api.web3forms.com/submit" method="POST" className={styles.form}>
-      <input type="hidden" name="access_key" value="443156e1-0dd8-4139-8ee2-d28cce007fb4"/>
+      <input type="hidden" name="access_key" value="1ec72a3a-e4b3-40b8-b307-6398803eb6b7"/>
       <input type="hidden" name="subject" value="New message from rgsroofingservices.co.uk"/>
       <input type="hidden" name="redirect" value="https://rgsroofingservicestemporary.netlify.app/contact-us?submitted=true"/>
       <input type="checkbox" name="botcheck" style={{display: 'none'}}/>

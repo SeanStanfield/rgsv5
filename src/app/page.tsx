@@ -1,95 +1,48 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import WhiteTriangle from "@/static/whiteTriangle.svg"
+import styles from "./page.module.scss";
+import { Box, Container, Grid, Typography, Stack, Button } from "@mui/material";
+import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+    <Box className={styles.heroBackground}>
+      <Container>
+        <Grid container alignItems='center' className={styles.heroWrapper}>
+          <Grid item md={8} className={styles.heroText}>
+            <Box className={styles.heroContent}>
+              <Typography className={styles.pageTitle} sx={{pb: 3}} variant='h1'>
+                27 years of roofing experience
+              </Typography>
+              <Typography className={styles.pageDescription} variant='body1'>
+                Subtitle
+              </Typography>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              <Stack direction='row' spacing={4} sx={{paddingTop: 3}}>
+                <Button className={styles.primaryButton} variant='contained' color='primary'
+                        component='a' href='contact-us'>Get in touch</Button>
+                <Button className={styles.secondaryButton} variant='outlined' color='secondary'
+                        component='a' href='tel:07920865826'>Call now</Button>
+              </Stack>
+            </Box>
+          </Grid>
+        </Grid>
+      </Container>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <Image src={WhiteTriangle} className={styles.whiteTriangle} alt='white triangle'/>
+    </Box>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+    <Stack className={styles.whatWeDo} justifyContent='center' alignItems='center'>
+      <Typography variant='h2' className={styles.whatWeDoTitle}>What We Do</Typography>
+      <Typography variant='body1' className={styles.whatWeDoDescription}>
+        Every year, thousands of homeowners with flat roofs complain of cracks and leakage. Most felt or asphalt flat roofs usually have a very short life span due to Britain&apos;s unpredictable and harsh weather. Our E.P.D.M roofs, we offer a permanent solution to your roofing needs.
+      </Typography>
+      <Box sx={{mb: 12}}></Box>
+    </Stack>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+    <Slider items={[{body: 'body', title: 'Cost Effffective', icon: "", image: ''}, {body: 'body2', title: 'Fully trained', icon: "", image: ''}]}/>
+  </main>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
