@@ -3,6 +3,7 @@ import WhiteTriangle from "@/static/whiteTriangle.svg"
 import styles from "./page.module.scss";
 import { Box, Container, Grid, Typography, Stack, Button } from "@mui/material";
 import Slider from "@/components/Slider";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -42,6 +43,8 @@ export default function Home() {
     </Stack>
 
     <Slider items={[{body: 'body', title: 'Cost Effffective', icon: "", image: ''}, {body: 'body2', title: 'Fully trained', icon: "", image: ''}]}/>
+  
+    <Reviews/>
   </main>
 
   );

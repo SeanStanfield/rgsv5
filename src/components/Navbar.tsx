@@ -10,6 +10,8 @@ import {
     Typography,
 } from "@mui/material";
 import { Close, Menu } from "@mui/icons-material";
+import Image from "next/image"
+import RGSLogo from "@/static/rgsLogo.png" 
 import styles from "./navbar.module.scss"; // Assume you've created this CSS module
 
 function Navbar() {
@@ -24,7 +26,7 @@ function Navbar() {
                     /* Handle logo click here if needed */
                 }}
             >
-                <img src="/assets/img/rgsLogoNew.png" alt="RGS Roofing logo" />
+                <Image src={RGSLogo} height={46} width={120} alt="RGS Roofing logo" />
             </Box>
             {/* Rest of your navbar code here, adapted to use Next.js Link */}
             <Box className={styles.flexNavs} sx={[{display: {xs: 'none', sm: 'flex'}}, {justifyContent: {xs: 'space-between'}}]}>
