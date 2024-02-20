@@ -1,11 +1,11 @@
 'use client'
-import React from 'react';
+import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Box, Container, Grid, Stack, Typography } from '@mui/material';
 import styles from './slider.module.scss'; // Assuming you have a Slider.module.css
 
-const Slider = ({children}) => {
+const Slider = ({children}: {children: Component}) => {
   return (
     <Box className={styles.sliderWrapper}>
       <Carousel autoPlay infiniteLoop interval={8000} showStatus={false}

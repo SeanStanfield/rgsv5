@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Grid, Stack, Typography } from '@mui/material';
 import styles from './SocialProof.module.scss'; // Import the SCSS module
 
-const SocialProof = ({ images }) => {
+const SocialProof = ({ images }: {images?: string[]}) => {
   return (
     <div className={styles.wrapper}>
       <Container>
