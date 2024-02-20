@@ -9,7 +9,7 @@ import styles from './slider.module.scss'; // Assuming you have a Slider.module.
 const Slider = ({items}: {items: TSliderItem[]}) => {
   return (
     <Box className={styles.sliderWrapper}>
-      <Carousel autoPlay infiniteLoop interval={8000} showStatus={false}
+      <Carousel showThumbs={false} autoPlay infiniteLoop interval={8000} showStatus={false}
         emulateTouch preventMovementUntilSwipeScrollTolerance swipeScrollTolerance={50}>
         
         {/* Slider Item 1 */}

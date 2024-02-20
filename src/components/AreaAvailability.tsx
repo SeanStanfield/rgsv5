@@ -48,7 +48,7 @@ const AreaAvailability = () => {
         const markerHeight = 50;
         const markerRadius = 10;
         const linearOffset = 25;
-        const popupOffsets: {[_: string]: [number, number]} = {
+        const popupOffsets: { [_: string]: [number, number] } = {
             "top": [0, 0],
             "top-left": [0, 0],
             "top-right": [0, 0],
@@ -101,17 +101,50 @@ const AreaAvailability = () => {
                 {/* ... Other content */}
             </Stack>
 
-            <Grid container className={styles.mapSection} spacing={4}>
+            <Grid
+                container
+                className={styles.mapSection}
+                spacing={4}
+            >
                 <Grid item md={6} lg={7} xs={12} className={styles.map}>
                     <div ref={mapContainer} className={styles.mapContainer} />
                 </Grid>
 
                 <Grid item md={6} lg={5} xs={12} className={styles.details}>
-                    <Stack>
-                        <Typography variant="h3" sx={{ fontSize: 20 }}>
+                    <Stack className="find-us-today">
+                        <Typography
+                            variant="h3"
+                            className="find-us-today-title"
+                        >
                             Find us today
                         </Typography>
-                        {/* ... Other details */}
+                        <Typography variant="body1" className="mini-text">
+                            We have very flexible working hours, give us a call
+                            7:00 - 5:00 Mon-Sun to arrange your free
+                            consultation.
+                        </Typography>
+                        <br />
+
+                        <Typography variant="subtitle1" className="mini-title">
+                            Address
+                        </Typography>
+                        <Typography variant="body1" className="mini-text">
+                            93 Billet Ln, Hornchurch RM11 1XJ
+                        </Typography>
+                        <br />
+                        <Typography variant="subtitle1" className="mini-title">
+                            Email
+                        </Typography>
+                        <Typography variant="body1" className="mini-text">
+                            rgsroofingservices@gmail.com
+                        </Typography>
+                        <br />
+                        <Typography variant="subtitle1" className="mini-title">
+                            Phone
+                        </Typography>
+                        <Typography variant="body1" className="mini-text">
+                            01708 702 216
+                        </Typography>
                     </Stack>
                 </Grid>
             </Grid>
