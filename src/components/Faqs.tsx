@@ -1,13 +1,18 @@
 'use client'
-import React, { useState } from 'react';
+import React, { SyntheticEvent, useState } from 'react';
 import { Typography, Accordion, AccordionDetails, AccordionSummary, Grid, Container, Box } from '@mui/material';
 import { Add as AddIcon, Remove } from '@mui/icons-material';
 import styles from './Faqs.module.scss'; // Import the SCSS module
+import Image from 'next/image';
+import FAQImage from '../static/roof-drone-high.jpeg'
 
-const Faqs = ({ faqs, title }) => {
+
+type Tfaqs = {question: string, answer: string}[];
+
+const Faqs = ({faqs, title}: {title?: string, faqs: Tfaqs}) => {
   const [expanded, setExpanded] = useState(null);
 
-  const handleChange = (panel) => (event, isExpanded) => {
+  const handleChange = (panel: any) => (event: SyntheticEvent, isExpanded:  boolean) => {
     setExpanded(isExpanded ? panel : false);
   };
 
@@ -49,7 +54,7 @@ const Faqs = ({ faqs, title }) => {
             </Box>
           </Grid>
           <Grid item md={4} sx={{ display: { xs: 'none', md: 'block' } }}>
-            <img src="https://rgsroofingservices.co.uk/assets/img/roof-drone-high.jpeg" alt='' className={styles.faqImageSrc} />
+            <Image src={FAQImage} alt='' style={{objectFit: 'cover'}} className={styles.faqImageSrc} />
           </Grid>
         </Grid>
       </Container>
