@@ -8,6 +8,7 @@ import Slider from "@/components/Slider";
 import StatsBox from "@/components/StatsBox";
 import SocialProof from "@/components/SocialProof";
 import Faqs from "@/components/Faqs";
+import AreaAvailability from "@/components/AreaAvailability";
 
 export default function About() {
   return (
@@ -17,10 +18,10 @@ export default function About() {
     <Numbers/>
     <BasicUsage/> */}
     <Slider items={[{body: 'body', title: 'Cost Effffective', icon: "", image: ''}, {body: 'body2', title: 'Fully trained', icon: "", image: ''}]}/>
+    <AreaAvailability/>
     <SocialProof images={[]}/>
     <Faqs faqs={[]} title={'Frequently asked questions'}/>
     <StatsBox/>
-    <h1>Test</h1>
     <CtaBox/>
    </main>
    
