@@ -7,6 +7,7 @@ import theme from '../theme';
 import { Typography } from "@mui/material";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const alfa = Alfa_Slab_One({ subsets: ["latin"], weight: ['400'] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={"a"}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
+            <SpeedInsights/>
             <Navbar/>
             {children}
             <Footer/>
