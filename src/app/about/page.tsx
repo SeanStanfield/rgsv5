@@ -16,9 +16,7 @@ export default function About() {
     <ServerTest/>
     <Numbers/>
     <BasicUsage/> */}
-    <Slider>
-      <Typography>outer child</Typography>
-    </Slider>
+    <Slider items={[{body: 'body', title: 'Cost Effffective', icon: "", image: ''}, {body: 'body2', title: 'Fully trained', icon: "", image: ''}]}/>
     <SocialProof images={[]}/>
     <Faqs faqs={[]} title={'Frequently asked questions'}/>
     <StatsBox/>
