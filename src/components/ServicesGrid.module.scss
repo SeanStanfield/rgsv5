@@ -1,0 +1,75 @@
+.card{
+    position: relative;
+    min-height: 300px;
+
+
+    @media all and (min-width: 660px){
+    //hover effect only appears above mobile
+    &:hover .image{
+        scale: (1.2);
+    }
+
+    &:hover .content{
+        translate: 0px 60px;
+
+        .title{
+            padding-bottom: 0rem;
+        }
+    }
+}
+
+}
+
+.content{
+    min-height: 250px;
+    border-radius: 5px;
+    height: 100%;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    padding: 1.3rem !important;
+    
+    translate: 0px 240px;
+    @media all and (max-width: 660px){
+        translate: 0px 200px;
+    }
+
+    .title{
+        padding-bottom: 0.25rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 40px;
+            background-color: #e7ce4f;
+            border-radius: 10px;
+            top: -8px;
+            left: 0;
+        }
+    }
+
+    .overview{
+        //overview only appears on mobile
+        @media screen and (min-width: 660px) {
+            display: none;
+        }
+    }
+
+    .introduction{
+        //introduction does not appear on mobile
+        @media screen and (max-width: 660px) {
+            display: none;
+        }
+    }
+}
+
+.image{
+    transition: all 0.3s ease;
+
+    scale: (1);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

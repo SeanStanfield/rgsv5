@@ -1,0 +1,58 @@
+// styles/YourComponent.module.scss
+.background {
+    min-height: 300px;
+    // Apply linear-gradient directly in the style file or dynamically inject the primary color via JS if needed
+  }
+  
+  .heroWrapper {
+    padding-top: 0;
+    height: 100%;
+    min-height: unset;
+    color: white;
+  }
+  
+  @media (max-width: 960px) { /* Adjust if your theme's breakpoints differ */
+    .heroWrapper {
+      padding-top: 64px; /* Assuming 8 * 8px = 64px */
+      gap: 48px; /* Assuming 6 * 8px = 48px */
+    }
+  }
+  
+  .heroImage {
+    height: 100%;
+    max-height: 100%;
+    position: relative; /* Required for Next.js Image component */
+  }
+  
+  .heroText {
+    
+    padding-left: 64px; /* Assuming 8 * 8px = 64px */
+  }
+  
+  @media (max-width: 960px) {
+    .heroText {
+      padding-left: 32px; /* Assuming 4 * 8px = 32px */
+    }
+  }
+  
+  .van {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    margin-left: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .pageTitle{
+    position: relative;
+  }
+  .pageTitle::before{
+    background-color: #fff;
+    content: "";
+    height: 4px;
+    left: 4px;
+    position: absolute;
+    top: -10px;
+    width: 80px;
+  }
