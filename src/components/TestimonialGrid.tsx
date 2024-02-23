@@ -27,11 +27,10 @@ const TestimonialGrid = ({ testimonials }: { testimonials: TTesimonial[] }) => {
                     <Box key={index} className={styles.testimonial}>
                         {index % 2 == 0 && (
                             <Grid item md={6} xs={12} className={styles.image}>
-                                <Image
-                                    src="/assets/img/FlatRoofFieldBackdrop.jpg"
+                                <img
+                                    src="https://rgsroofingservices.co.uk/assets/img/RoofWhole.jpg"
                                     alt="roof example work"
-                                    layout="fill"
-                                    objectFit="cover"
+                                   
                                 />
                             </Grid>
                         )}
@@ -62,11 +61,10 @@ const TestimonialGrid = ({ testimonials }: { testimonials: TTesimonial[] }) => {
 
                         {index % 2 != 0 && (
                             <Grid item md={6} xs={12} className={styles.image}>
-                                <Image
-                                    src="/assets/img/FlatRoofFieldBackdrop.jpg"
+                                <img
+                                    src="https://rgsroofingservices.co.uk/assets/img/RoofWhole.jpg"
                                     alt="roof example work"
-                                    layout="fill"
-                                    objectFit="cover"
+                                   
                                 />
                             </Grid>
                         )}
