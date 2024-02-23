@@ -1,0 +1,48 @@
+/* BlogList.module.scss */
+.container {
+    margin-top: 16px; /* Replace with your theme's spacing */
+  }
+  
+  .card {
+    display: flex;
+    max-height: 400px;
+    margin: 32px; /* Replace with your theme's spacing */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
+  
+    @media (max-width: 960px) {
+      flex-direction: column;
+      max-height: unset;
+      margin: 16px 8px;
+    }
+  
+    .fullWidth {
+      width: 100%;
+    }
+  
+    .cardMedia {
+      max-width: 50%;
+      min-width: 200px;
+      object-position: top;
+  
+      @media (max-width: 960px) {
+        max-width: 100%;
+        object-fit: cover;
+        max-height: 300px;
+      }
+    }
+  
+    .cardContent {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .cardContentPublish {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
